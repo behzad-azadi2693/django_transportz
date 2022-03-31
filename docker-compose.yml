@@ -1,0 +1,21 @@
+version: '3.9' 
+
+services:
+
+    app:
+        build: .
+        container_name: app
+        restart: on-failure
+        command: sh -c "python3 manage.py makemigrations && 
+                        python3 manage.py migrate --no-input && 
+                        python3 manage.py collectstatic --no-input && 
+                        python manage.py createsuperuser --user admin --email admin@gmail.com --noinput; &&
+                        python manage.py runserver"
+
+        expose: 
+            - "8000"
+
+        volumes: 
+            - .:/code/
+           
+        

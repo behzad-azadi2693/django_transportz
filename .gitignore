@@ -1,0 +1,4 @@
+sbenv/
+__pycache__/
+db.*
+00*
