@@ -2,7 +2,7 @@
 @font-face {
 	font-family: IRANSans;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: bold;
 	src: url('../fonts/eot/IRANSansWeb_Medium.eot');
 	src: url('../fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
 		 url('../fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
@@ -10,7 +10,7 @@
 		 url('../fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
 }
 body {
-  font-family: "IRANSans";
+  font-family: 'IRANSans';
   background-color: #fff;
   overflow-x: hidden;
 }
@@ -81,7 +81,7 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #0a0057;
-  font-family: "IRANSans";
+  font-family: 'IRANSans';
 }
 
 .header_section .header_container {
@@ -610,7 +610,7 @@ a:focus {
   background-size: 100% 101%;
 
   background-repeat: no-repeat;
-  font-family: "IRANSans";
+  font-family: 'IRANSans';
 }
 
 .info_section h5 {
