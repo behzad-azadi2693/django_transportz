@@ -15,13 +15,13 @@ Including another URLconf
 """
 import django
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.conf import settings
 from django.conf.urls.static import static
+from Transport.views import IndexView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('Transport.urls')),
+    re_path(r'^', IndexView.as_view()),
 ]
 
 

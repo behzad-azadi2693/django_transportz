@@ -29,7 +29,7 @@ SECRET_KEY = ENV('SECRET_KEY')
 DEBUG = ENV('DEBUG') == 'True'
 
 if DEBUG:
-    ALLOWED_HOSTS = ['transport-liberal.fandogh.cloud',]
+    ALLOWED_HOSTS = []
 else:
     ALLOWED_HOSTS = list(ENV('ALLOWED_HOSTS'))
 
